@@ -30,7 +30,7 @@ if config.get('plugin.KcwikiReporter.enable', true)
     return
   window.addEventListener 'battle.result', (e) ->
     {rank, map, mapCell, dropShipId, deckShipId } = e.detail
-    {_teitokuLv, _nickName, _nickNameId, _decks, _ships} = window
+    {_teitokuLv, _nickName, _teitokuId, _decks, _ships} = window
     handleBattleResult(_decks, _ships)
     reoprtTyku(e.detail)
     return
